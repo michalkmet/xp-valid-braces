@@ -35,8 +35,11 @@ validBraces
 - ✅ DONE "(){}[]" should return true
 - ✅ DONE "}" should return false
 - ✅ DONE "[[[[{(({[]}))}]]]]" should return true
+- ✅ "(((({{" should return false
+- 🚧 ")))}" should return false
 
 if current char is LEFT => append to array
 else => check if pair is correct with last array value
 - pop the value from brackets arr when brackets match
 
+if arr length > 0 => false

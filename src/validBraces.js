@@ -17,6 +17,7 @@ function validBraces(str) {
     }
   }
 
+  if (arrLeftBrackets.length > 0) return false;
   return true;
 }
 
