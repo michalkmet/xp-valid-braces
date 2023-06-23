@@ -14,7 +14,7 @@ function validBraces(str) {
       arrLeftBrackets.push(char);
     } else {
       console.log('char: ', char);
-      // console.log('pair: ', pairOfBrackets[arrLeftBrackets.pop()]);
+
       if (char !== pairOfBrackets[arrLeftBrackets.pop()]) {
         console.log(char);
         return false;
