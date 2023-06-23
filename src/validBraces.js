@@ -3,6 +3,21 @@ function validBraces(str) {
   if (['([)]', '[{]}'].includes(str)) {
     return false;
   }
+
+  leftArray = { 
+    ")": "(",
+    "]": "[",
+    "}": "{",
+  };
+
+
+  for (i = 0; i < str.length; i++){
+    let char = str[i]
+    if (Object.keys(leftArray).includes(char)){
+      
+    }
+  }
+
   return true;
 }
 

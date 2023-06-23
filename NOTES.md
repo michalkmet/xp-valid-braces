@@ -29,8 +29,11 @@ validBraces
 - ✅ DONE '"([)]" should return false'
 - ✅ DONE '"{}" should return true'
 - ✅ DONE '"[{]}" should return false'
+- ✅ "()}" should return false'
 - 🚧 "([{]})" should return false'
 - ⚠ "([{}])" should return true'
-- ✅ "()}" should return false'
+- ⚠ "(){}[]" should return true
 
+if current char is LEFT => append to array
+else => check if pair is correct with last array value
 
