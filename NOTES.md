@@ -36,4 +36,5 @@ validBraces
 
 if current char is LEFT => append to array
 else => check if pair is correct with last array value
+- pop the value from brackets arr when brackets match
 

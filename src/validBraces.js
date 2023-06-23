@@ -4,7 +4,7 @@ function validBraces(str) {
     return false;
   }
 
-  let pairOfBrackets = { 
+  const pairOfBrackets = {
     ')': '(',
     ']': '[',
     '}': '{',
@@ -18,8 +18,11 @@ function validBraces(str) {
       console.log('leftBrackets includes this char: ', char);
       arrLeftBrackets.push(char);
     } else {
-      if(char === arrLeftBrackets[arrLeftBrackets.length-1]){
-        arrLeftBrackets.pop();
+      console.log(char);
+      console.log('pair: ', pairOfBrackets[arrLeftBrackets.pop()]);
+      if (char !== pairOfBrackets[arrLeftBrackets.pop()]) {
+        console.log(char);
+        return false;
       }
     }
     console.log('arrLeftBrackets: ', arrLeftBrackets);
