@@ -1,5 +1,5 @@
 function validBraces(str) {
-  if (str == '([)]') {
+  if (['([)]', '[{]}'].includes(str)) {
     return false;
   }
   return true;

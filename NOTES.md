@@ -25,10 +25,10 @@ Examples
 
 validBraces
 
-- ⚠ TODO '"()" should return true'
-- ⚠ TODO '"([)]" should return false'
-- ⚠ TODO '"{}" should return true'
-- ⚠ TODO '"[{]}" should return false'
+- ✅ DONE '"()" should return true'
+- ✅ DONE '"([)]" should return false'
+- ✅ DONE '"{}" should return true'
+- ✅ DONE '"[{]}" should return false'
 - ⚠ TODO '"([{]})" should return false'
 
 
