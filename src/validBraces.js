@@ -7,9 +7,9 @@ function validBraces(str) {
 
   console.log('str: ', str);
   let arrLeftBrackets = [];
-  for (i = 0; i < str.length; i++){
+  for (let i = 0; i < str.length; i++) {
     let char = str[i];
-    if (Object.keys(pairOfBrackets).includes(char)){
+    if (Object.keys(pairOfBrackets).includes(char)) {
       console.log('pairOfBrackets includes this char: ', char);
       arrLeftBrackets.push(char);
     } else {

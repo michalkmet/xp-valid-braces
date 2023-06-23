@@ -31,7 +31,7 @@ validBraces
 - ✅ DONE '"[{]}" should return false'
 - ✅ DONE "()}" should return false'
 - ✅ DONE "([{]})" should return false'
-- ⚠ "([{}])" should return true'
+- ✅ "([{}])" should return true'
 - ⚠ "(){}[]" should return true
 
 if current char is LEFT => append to array
