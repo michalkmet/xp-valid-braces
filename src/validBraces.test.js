@@ -44,4 +44,8 @@ describe('validBraces', () => {
   it('should return false when given "(((({{"', () => {
     expect(validBraces('(((({{')).toBe(false);
   });
+
+  it('should return false when given ")))}"', () => {
+    expect(validBraces(')))}')).toBe(false);
+  });
 });
